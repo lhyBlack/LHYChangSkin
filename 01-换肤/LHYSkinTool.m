@@ -19,6 +19,8 @@ static NSString *_skin;
 + (void)initialize //初始化 只执行一次
 {
     NSLog(@"initialize");
+    
+    //保存数据
     NSString *strSkin = [[NSUserDefaults standardUserDefaults]objectForKey:@"skin"];
     if (strSkin == nil) { //只在 第一次启动 从来没有选择过情况下 起作用
         strSkin = @"blue";
