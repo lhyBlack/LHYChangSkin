@@ -16,8 +16,8 @@ static NSString *_skin;
 
 @implementation LHYSkinTool
 
-+ (void)initialize //初始化 只执行一次
-{
+//初始化 只执行一次
++ (void)initialize{
     NSLog(@"initialize");
     
     //保存数据
@@ -29,10 +29,7 @@ static NSString *_skin;
     
     //self  在类型 相当于CZSkinTool
 }
-//+(void)load //当前类被加载
-//{
-//    
-//}
+
 +(void)saveSkinWith:(NSString *)skinStr
 {
     //保存刀本地的偏好   保存到内存的变量

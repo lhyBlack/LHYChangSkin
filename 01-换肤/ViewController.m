@@ -50,7 +50,7 @@
     [self setSkin];
     
 }
-//被更新
+#pragma mark --被更新
 - (void)setSkin
 {
     
